@@ -627,6 +627,9 @@ Additional information available from 'go env' but not read from the environment
 		If module-aware mode is disabled, GOMOD will be the empty string.
 	GOTOOLDIR
 		The directory where the go tools (compile, cover, doc, etc...) are installed.
+	GO_ASSUME_CROSSCOMPILING
+		Force the go build system to honor the different CC_FOR_TARGET even
+		if the architecture is the same, useful when cross compiling.
 	`,
 }
 
